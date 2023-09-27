@@ -43,13 +43,18 @@ public class PemilihanPercobaan202 {
         {
             System.out.println("Nilai Huruf Anda = D \nNilai Setara Anda = 1 \nKualifikasi Anda = Kurang");
         }
-        else 
+        else if ( 0 < total && total <= 39)
         {
             System.out.println("Nilai Huruf Anda = E \nNilai Setara Anda = 0 \nKualifikasi Anda = Gagal");
+        }
+        else 
+        {
+            System.out.println("Terjadi Kesalahan");
         }
         
         String message = total < 65 ? "Remidi" : "Tidak Remidi";
 
         System.out.println("Nilai Akhir = " + total + " sehingga " + message);
+        
     }
 }
