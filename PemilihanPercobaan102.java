@@ -3,17 +3,15 @@ import java.util.Scanner;
 public class PemilihanPercobaan102 {
 
     public static void main(String[] args) {
-        
-        Scanner input02 = new Scanner(System.in);
+        Scanner input15 = new Scanner (System.in);
 
-        int angka;
+        System.out.println("Masukkan angka:  ");
+       int angka = input15.nextInt();
+       
+       String hasil;
 
-        System.out.println("Masukan angka:  ");
-        angka = input02.nextInt();
-
-        String jenisAngka = (angka % 2 == 0) ? "genap" : "ganjil";
-        System.out.println("Angka " + angka + " bilangan " + jenisAngka);
-        
+       hasil = (angka <=-1) ? " Bilangan negatif " : "Bilangan positif";
+       System.out.println(angka + " adalah " + hasil);
     }
     
 }
